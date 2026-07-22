@@ -89,12 +89,15 @@ textarea {
 
    .content-wrapper {
     outline: 3px dotted red;
+    width: 90%;
+    margin: 50px 0;
    }
 /* -------------- Base Header - Footer Styles ------------- */
 /* Header Styles */
 header {
   display: flex;
   justify-content: center;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -102,11 +105,23 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+}
+
+header nav {
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 /* Footer Styles */
@@ -117,33 +132,81 @@ footer {
   text-align: center;
 }
 
+footer .content-wrapper {
+  width: 55%;
+}
+
+footer h4 {
+  margin: 20px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-footer .social p {
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* -------------- Mobile Styles ------------- */
-/* Homepage */
+footer p {
+  margin: 0;
+}
+
+footer .copyright {
+  margin: 20px;
+}
+
+/* -------------- Mobile Styles - Homepage ------------- */
+
+/* Hero Area */
+
 .hero-area {
   display: flex;
   justify-content: center;
 }
+
+/* Aside */
 
 aside {
   display: flex;
   justify-content: center;
 }
 
+aside h3 {
+  margin: 20px 0;
+}
+
+.form-description p {
+  margin-bottom: 30px;
+}
+
+#email-input {
+  padding: 1em;
+  margin-bottom: 20px;
+}
+
+#download-button {
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+/* Features */
+
 .features {
   display: flex;
   justify-content: center;
+}
+
+.features h2 {
+  margin-bottom: 60px;
 }
 
 .features .features-items {
@@ -154,12 +217,37 @@ aside {
 
 }
 
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features p {
+  margin: 0;
+}
+
+.fontawesome-icon {
+  padding-bottom: 40px;
+}
+
+/* Reviews */
+
 .reviews {
   display: flex;
   justify-content: center;
 }
 
-/* About Page */
+.reviews h2 {
+  padding-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  padding: 20px 0;
+}
+
+/* -------------- About Page ------------- */
+
 .mission {
   display: flex;
   justify-content: center;
@@ -170,7 +258,12 @@ aside {
   justify-content: center;
 }
 
-/* FAQ Page */
+.contact-content p {
+  margin: 0;
+}
+
+/* -------------- FAQ Page ------------- */
+
 .faq {
   display: flex;
   justify-content: center;
@@ -181,8 +274,16 @@ aside {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-
+  margin: 50px 0 0 0;
 }
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+} 
 
 /* ==========================================================================
    Helper classes
