@@ -240,7 +240,7 @@ aside h3 {
   justify-content: center;
 }
 
-.reviews h2 {
+.reviews .content-wrapper h2 {
   padding-bottom: 40px;
 }
 
@@ -378,7 +378,6 @@ aside h3 {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-
 /* -------------- Tablet Styles ------------- */
 
 /* General Styles */
@@ -510,9 +509,59 @@ aside h3 {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* Desktop styles */
-}
+/* -------------- Desktop Styles ------------- */
 
+/* General Styles */
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+/* Header */
+  header {
+    padding: 15px 0;
+  }
+
+/* Homepage */
+  .hero-area h1 {
+    width:80%;
+  }
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  .features .content-wrapper h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .reviews .content-wrapper h2 {
+    padding-bottom: 50px;
+  }
+
+  .reviews article div {
+    width: 42%;
+  }
+
+/* About Page */
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+/* FAQ Page */
+  .faq h2 {
+    width: 100%;
+  }
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
