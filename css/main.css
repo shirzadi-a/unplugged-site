@@ -290,7 +290,6 @@ input[type=button] {
   justify-content: center;
   background: url(../img/unplugged-retreat-features.jpg) center no-repeat #333;
   background-size: cover;
-  min-height: 500px;
 }
 
 .features h2 {
@@ -302,7 +301,6 @@ input[type=button] {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-
 }
 
 .features article {
@@ -310,13 +308,14 @@ input[type=button] {
   margin: 30px 0;
 }
 
+.fontawesome-icon {
+  font-size: 3.75em;
+  padding-bottom: 40px;
+}
+
 .features p {
   margin: 0;
   text-align: center;
-}
-
-.fontawesome-icon {
-  padding-bottom: 40px;
 }
 
 /* Reviews */
@@ -563,6 +562,10 @@ input[type=button] {
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
+  }
+
+  .fontawesome-icon {
+    padding-bottom: 30px;
   }
 
   .features-item-description {
